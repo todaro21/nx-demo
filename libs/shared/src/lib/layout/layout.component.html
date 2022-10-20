@@ -2,10 +2,8 @@
   <div class="header">
     <ng-content select=[header]></ng-content>
   </div>
-  <div class="aside">
-    <ng-content select=[aside]></ng-content>
-  </div>
   <div class="main">
-    <ng-content select=[main]></ng-content>
+    <ng-content class="aside" select=[aside]></ng-content>
+    <ng-content class="content" select=[content]></ng-content>
   </div>
 </div>

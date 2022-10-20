@@ -1,23 +1,28 @@
 .container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
   min-width: 100%;
 }
 
-.aside {
-  grid-row: 2 / 15;
-  grid-column: 1 / 2;
-  border: 5px solid red;
-}
-
 .main {
-  grid-row: 2 / 15;
-  grid-column: 2 / 8;
-  border: 5px solid blue;
+  display: flex;
+  flex-grow: 1;
 }
 
 .header {
-  grid-row: 1 / 2;
-  grid-column: 1 / 8;
-  border: 5px solid pink;
+  height: 75px;
+  overflow: hidden;
+  border-bottom: 2px solid black;
+}
+
+.aside {
+  width: 300px;
+  overflow: hidden;
+  border-right: 2px solid black;
+}
+
+.content {
+  flex-grow: 1;
+  overflow: hidden;
 }
